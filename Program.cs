@@ -12,7 +12,8 @@ class Program
 - Умножение (введите 1)
 - Деление (введите 2)
 - Сложение (введите 3)
-- Вычитание (введите 4)");
+- Вычитание (введите 4)
+- Возведение числа в степень (введите 5)");
         Console.ForegroundColor = ConsoleColor.Red;
         string q = Console.ReadLine();
         double a, b;
@@ -50,7 +51,11 @@ class Program
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Результат вычитания = {0}", a - b);
         }
-
+        if (q == "5")
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Результат возведения числа в степень = {0}", Math.Pow(a, b));
+        }
         Console.ReadKey();
     }
 }
