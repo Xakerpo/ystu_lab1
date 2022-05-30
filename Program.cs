@@ -28,8 +28,18 @@ class Program
         Console.WriteLine(' ');
         if (q == "1")
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Результат умножения = {0}", a * b);
+                if (b == a)
+                {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Результат умножения = {0}", Math.Pow(a,2));
+            }
+                else
+                {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Результат умножения = {0}", a * b);
+            }
+            
+            
         }
         if (q == "2")
         {
