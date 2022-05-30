@@ -33,10 +33,15 @@ class Program
         }
         if (q == "2")
         {
-            
+            if (b == 0)
+            {
+                Console.WriteLine("На ноль делить нельзя!", "Ошибка");
+            }
+            else
+            {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Результат деления = {0}", a / b);
-        
+            }
         }
         if (q == "3")
         {
